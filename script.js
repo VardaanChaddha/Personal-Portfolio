@@ -149,7 +149,7 @@ document.addEventListener('DOMContentLoaded', () => {
      rather receive submissions directly. */
   const contactForm = document.getElementById('contactForm');
   const formNote = document.getElementById('formNote');
-  const RECIPIENT_EMAIL = 'your.email@example.com'; // TODO: replace with your email
+  const RECIPIENT_EMAIL = 'Vardaan.26074@stu.upes.ac.in'; // TODO: replace with your email
 
   if (contactForm) {
     contactForm.addEventListener('submit', (event) => {
