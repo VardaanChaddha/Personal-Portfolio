@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vardaan Chaddha — Portfolio</title>
+  <meta name="description"
+    content="Personal portfolio of Vardaan Chaddha, a developer building fast, accessible interfaces for the web.">
+  <link rel="icon"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='4' fill='%230A2540'/%3E%3Ccircle cx='16' cy='16' r='9' fill='none' stroke='%238FD6E8' stroke-width='2'/%3E%3Cline x1='16' y1='3' x2='16' y2='7' stroke='%238FD6E8' stroke-width='2'/%3E%3Cline x1='16' y1='25' x2='16' y2='29' stroke='%238FD6E8' stroke-width='2'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Inter:wght@400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ============ HEADER / NAVIGATION ============ -->
+  <header class="site-header" id="top">
+    <div class="ruler-ticks" aria-hidden="true"></div>
+    <div class="nav-inner">
+      <a href="#top" class="logo" aria-label="Vardaan Chaddha — home">
+        <span class="logo-mark">YN</span>
+        <span class="logo-text">Vardaan&nbsp;Chaddha</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navMenu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav-menu" id="navMenu" aria-label="Primary">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ============ HERO / INTRO ============ -->
+    <section class="hero" id="home">
+      <div class="blueprint-grid" aria-hidden="true"></div>
+      <span class="reg-mark reg-tl" aria-hidden="true"></span>
+      <span class="reg-mark reg-tr" aria-hidden="true"></span>
+      <span class="reg-mark reg-bl" aria-hidden="true"></span>
+      <span class="reg-mark reg-br" aria-hidden="true"></span>
+
+      <div class="hero-inner">
+        <p class="eyebrow"><span class="stamp">REV.01 · 2026</span><span>PERSONAL PORTFOLIO</span></p>
+        <h1 class="hero-title">Hi, I'm <span class="accent">Vardaan Chaddha</span>.</h1>
+        <p class="hero-tagline">I build <span id="typewriter" class="typewriter" aria-live="polite"></span><span
+            class="caret" aria-hidden="true"></span></p>
+        <p class="hero-sub">A B.Tech CSE Core student who likes turning rough ideas into fast, accessible interfaces —
+          and writing down exactly how they got built.</p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-stamp">View My Work</a>
+          <a href="#contact" class="btn btn-ghost">Get In Touch</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ME ============ -->
+    <section class="about" id="about">
+      <div class="section-head">
+        <span class="tag-label">01 / ABOUT</span>
+        <h2>About Me</h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-avatar-wrap">
+          <div class="avatar-frame">
+            <svg viewBox="0 0 200 200" class="avatar-ring" aria-hidden="true">
+              <circle cx="100" cy="100" r="94" fill="none" stroke="var(--line-cyan)" stroke-width="1.5"
+                stroke-dasharray="4 5" />
+            </svg>
+            <img src="profile.jpg" alt="Vardaan Chaddha" class="avatar-photo"
+              onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            <svg viewBox="0 0 200 200" class="avatar-placeholder" role="img"
+              aria-label="Avatar placeholder — add profile.jpg">
+              <circle cx="100" cy="100" r="80" fill="var(--navy-800)" />
+              <circle cx="100" cy="78" r="26" fill="var(--paper-50)" opacity="0.92" />
+              <path d="M50 158c8-30 34-46 50-46s42 16 50 46" fill="var(--paper-50)" opacity="0.92" />
+            </svg>
+          </div>
+          <p class="avatar-caption">FIG.01 — PROFILE</p>
+        </div>
+
+        <div class="about-content">
+          <p class="about-bio">
+            I'm <strong>Vardaan Chaddha</strong>, a 2nd year B.Tech CSE Core student
+            at University of Petroleum and Energy Studies. I like the part of building software where a blank page turns
+            into
+            something someone can actually click through — so I spend most of my time on the front end, sweating
+            details like spacing, load time, and whether a button feels right to press.
+          </p>
+          <p class="about-bio">
+            Outside of coursework I build small projects to learn by doing, read up on design systems, and I'm
+            slowly getting comfortable with backend basics so I can ship a full idea end-to-end. This site itself
+            is one of those projects — built, styled and documented from scratch as part of Frontend Development.
+          </p>
+
+          <dl class="skills-list">
+            <p class="tag-label">SKILL SPEC</p>
+            <div class="skill-row">
+              <dt>LANG</dt>
+              <dd>HTML · CSS · JavaScript</dd>
+            </div>
+            <div class="skill-row">
+              <dt>TOOLS</dt>
+              <dd>Git · GitHub · VS&nbsp;Code</dd>
+            </div>
+            <div class="skill-row">
+              <dt>LEARNING</dt>
+              <dd>C++ . Python</dd>
+            </div>
+            <div class="skill-row">
+              <dt>FOCUS</dt>
+              <dd>Responsive UI · Accessibility</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section class="projects" id="projects">
+      <div class="section-head">
+        <span class="tag-label">02 / PROJECTS</span>
+        <h2>Selected Work</h2>
+      </div>
+
+      <div class="projects-grid">
+
+        <article class="project-card">
+          <div class="project-card-head">
+            <span class="sheet-no">SHEET 01</span>
+          </div>
+          <div class="project-thumb">
+            <img src="project-chess.png" alt="Console Chess screenshot" loading="lazy">
+          </div>
+          <h3 class="project-title">Console Chess</h3>
+          <p class="project-desc">A fully functional 2-player chess game running in the CLI.</p>
+          <ul class="tech-tags">
+            <li>C</li>
+          </ul>
+          <a href="https://github.com/VardaanChaddha/C-Projects" class="project-link" target="_blank"
+            rel="noopener">View Project →</a>
+        </article>
+
+        <article class="project-card">
+          <div class="project-card-head">
+            <span class="sheet-no">SHEET 02</span>
+          </div>
+          <div class="project-thumb">
+            <img src="project-dashboard.png" alt="Global Conflict Intelligence Dashboard screenshot" loading="lazy">
+          </div>
+          <h3 class="project-title">Global Conflict Intelligence Dashboard</h3>
+          <p class="project-desc">An interactive dashboard for visualizing and analyzing real-time and historical global
+            conflict data.</p>
+          <ul class="tech-tags">
+            <li>Python</li>
+          </ul>
+          <a href="https://github.com/VardaanChaddha/Python-Projects" class="project-link" target="_blank"
+            rel="noopener">View
+            Project →</a>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="contact" id="contact">
+      <div class="blueprint-grid" aria-hidden="true"></div>
+      <div class="section-head light">
+        <span class="tag-label">03 / CONTACT</span>
+        <h2>Let's Build Something</h2>
+      </div>
+
+      <div class="contact-grid">
+        <form class="contact-form" id="contactForm" novalidate>
+          <label for="cf-name">Name
+            <input type="text" name="name" id="cf-name" autocomplete="name" required>
+          </label>
+          <label for="cf-email">Email
+            <input type="email" name="email" id="cf-email" autocomplete="email" required>
+          </label>
+          <label for="cf-message">Message
+            <textarea name="message" id="cf-message" rows="5" required></textarea>
+          </label>
+          <button type="submit" class="btn btn-stamp">Send Message</button>
+          <p class="form-note" id="formNote" role="status" aria-live="polite"></p>
+        </form>
+
+        <div class="contact-direct">
+          <p class="tag-label light">DIRECT CHANNELS</p>
+
+          <a href="mailto:Vardaan.26074@stu.upes.ac.in" class="contact-line">
+            <svg viewBox="0 0 24 24" class="icon">
+              <path d="M3 5h18v14H3z" fill="none" stroke="currentColor" stroke-width="1.6" />
+              <path d="M3 6l9 7 9-7" fill="none" stroke="currentColor" stroke-width="1.6" />
+            </svg>
+            Vardaan.26074@stu.upes.ac.in
+          </a>
+          <a href="https://github.com/VardaanChaddha" class="contact-line" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" class="icon">
+              <path fill="currentColor"
+                d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.08 2.91.83.09-.65.35-1.08.63-1.33-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.4 9.4 0 0 1 5 0c1.91-1.3 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0 0 12 2Z" />
+            </svg>
+            github.com/VardaanChaddha
+          </a>
+          <a href="https://www.linkedin.com/in/vardaan-chaddha" class="contact-line" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" class="icon">
+              <path fill="currentColor"
+                d="M6.94 5a1.94 1.94 0 1 1-3.88 0 1.94 1.94 0 0 1 3.88 0ZM3.4 8.75h3.47V21H3.4V8.75Zm6.02 0h3.33v1.68h.05c.46-.88 1.6-1.8 3.3-1.8 3.53 0 4.18 2.32 4.18 5.35V21h-3.47v-5.4c0-1.29-.02-2.95-1.8-2.95-1.8 0-2.08 1.4-2.08 2.85V21H9.42V8.75Z" />
+            </svg>
+            linkedin.com/in/vardaan-chaddha
+          </a>
+
+          <p class="contact-note">Prefer email? The form on the left opens a pre-filled message in your own mail app —
+            nothing is sent to a server.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER (title block) ============ -->
+  <footer class="titleblock" id="footer">
+    <div class="titleblock-grid">
+      <div class="tb-cell tb-name"><span class="tb-label">NAME</span>Vardaan Chaddha</div>
+      <div class="tb-cell tb-role"><span class="tb-label">ROLE</span>Frontend Developer</div>
+      <div class="tb-cell tb-date"><span class="tb-label">DATE</span><span id="footerDate"></span></div>
+      <div class="tb-cell tb-sheet"><span class="tb-label">SHEET</span>1 OF 1</div>
+      <div class="tb-cell tb-rev"><span class="tb-label">REV</span>01</div>
+      <div class="tb-cell tb-download">
+        <a href="documentation.pdf" download class="download-btn">
+          <svg viewBox="0 0 24 24" class="icon">
+            <path fill="currentColor"
+              d="M12 3v11.17l3.59-3.58L17 12l-5 5-5-5 1.41-1.41L11 14.17V3h1ZM5 19h14v2H5v-2Z" />
+          </svg>
+          Download Documentation
+        </a>
+      </div>
+    </div>
+    <p class="copyright">© <span id="footerYear"></span> Vardaan Chaddha. All rights reserved. Built with HTML, CSS
+      &amp; JavaScript — AI-assisted (see documentation for details).</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
